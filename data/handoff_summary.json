@@ -1,0 +1,21 @@
+{
+  "handoffs": 92,
+  "first": "2026-09-15",
+  "last": "2026-11-07",
+  "by_kind": {
+    "bug": 56,
+    "feature": 14,
+    "improvement": 20,
+    "none": 2
+  },
+  "by_outcome": {
+    "merged": 77,
+    "running": 10,
+    "idle": 3,
+    "closed-already-done": 2
+  },
+  "with_ac_table": 90,
+  "ac_verified": 682,
+  "ac_total": 683,
+  "all_ac_green": 89
+}

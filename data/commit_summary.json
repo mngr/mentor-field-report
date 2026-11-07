@@ -1,0 +1,33 @@
+{
+  "first_commit": "2026-09-12",
+  "last_commit": "2026-11-07",
+  "merge_commits_excluded": 9,
+  "all": {
+    "commits": 1264,
+    "loop": 732,
+    "share": 0.5791
+  },
+  "last_30_days": {
+    "commits": 656,
+    "loop": 475,
+    "share": 0.7241,
+    "from": "2026-10-08"
+  },
+  "by_kind": {
+    "human-conventional": 391,
+    "curator": 482,
+    "doctor": 35,
+    "strategist": 174,
+    "other": 141,
+    "sdk": 14,
+    "records": 27
+  },
+  "agent_coauthored": 1191,
+  "first_loop_commit": {
+    "curator": "2026-09-25",
+    "strategist": "2026-10-05",
+    "doctor": "2026-09-30",
+    "sdk": "2026-10-21",
+    "records": "2026-10-21"
+  }
+}

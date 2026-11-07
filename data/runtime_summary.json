@@ -1,0 +1,263 @@
+{
+  "source": "daemon export of 2026-11-07 (scripts/export-for-paper.ts); weekly windows end 00:00Z, whole window to 23:59Z",
+  "first4_weeks": {
+    "delivered": 46,
+    "interventions": 60,
+    "per_delivered": 1.3,
+    "per_point": 0.63,
+    "points": 95.0,
+    "agent_hours": 542.9,
+    "lost_share": 22.2
+  },
+  "last4_weeks": {
+    "delivered": 39,
+    "interventions": 56,
+    "per_delivered": 1.44,
+    "per_point": 0.57,
+    "points": 99.0,
+    "agent_hours": 562.2,
+    "lost_share": 10.9
+  },
+  "by_size_periods": {
+    "Small": {
+      "first4": {
+        "delivered": 15,
+        "interventions": 1
+      },
+      "last4": {
+        "delivered": 14,
+        "interventions": 1
+      }
+    },
+    "Medium": {
+      "first4": {
+        "delivered": 21,
+        "interventions": 4
+      },
+      "last4": {
+        "delivered": 10,
+        "interventions": 1
+      }
+    },
+    "Large": {
+      "first4": {
+        "delivered": 6,
+        "interventions": 5
+      },
+      "last4": {
+        "delivered": 5,
+        "interventions": 3
+      }
+    },
+    "Extra large": {
+      "first4": {
+        "delivered": 4,
+        "interventions": 18
+      },
+      "last4": {
+        "delivered": 10,
+        "interventions": 12
+      }
+    }
+  },
+  "whole_window": {
+    "days": 57,
+    "delivered": 85,
+    "interventionsPerDelivered": 1.38,
+    "hours": 1111,
+    "leadHoursMedian": 5.9,
+    "lostShare": 16.4,
+    "deliveredPoints": 194,
+    "interventionsPerPoint": 0.6,
+    "interventions": 117,
+    "bySize": [
+      {
+        "size": "Small",
+        "delivered": 29,
+        "interventions": 2,
+        "perDelivered": 0.07,
+        "leadHoursMedian": 4.3,
+        "hoursPerDelivered": 2.7,
+        "lostShare": 26.6
+      },
+      {
+        "size": "Medium",
+        "delivered": 31,
+        "interventions": 5,
+        "perDelivered": 0.16,
+        "leadHoursMedian": 11.2,
+        "hoursPerDelivered": 6,
+        "lostShare": 19.3
+      },
+      {
+        "size": "Large",
+        "delivered": 11,
+        "interventions": 9,
+        "perDelivered": 0.82,
+        "leadHoursMedian": 8.8,
+        "hoursPerDelivered": 21.4,
+        "lostShare": 20.8
+      },
+      {
+        "size": "Extra large",
+        "delivered": 14,
+        "interventions": 30,
+        "perDelivered": 2.14,
+        "leadHoursMedian": null,
+        "hoursPerDelivered": 43.8,
+        "lostShare": 12.5
+      }
+    ],
+    "restarts": {
+      "count": 741,
+      "drainHours": 54.9,
+      "paused": 211,
+      "drained": 200
+    },
+    "rebaseLaps": {
+      "laps": 164,
+      "rerunSessions": 1101,
+      "rerunHours": 245.5,
+      "passedSessions": 436,
+      "passedHours": 86.2
+    },
+    "byStep_share": {
+      "implement": 34.6,
+      "staging-verify": 24.6,
+      "record-demo": 16.6,
+      "drive-green": 7.2,
+      "rebase": 4.8,
+      "handoff": 4,
+      "plan": 2.3,
+      "lessons": 1.8,
+      "open-pr": 1.4,
+      "intake": 0.8,
+      "docs-open": 0.8,
+      "prototype": 0.6,
+      "docs-green": 0.6,
+      "docs-merge": 0
+    },
+    "top_losses": [
+      {
+        "key": "redo:implement",
+        "hours": 63.8,
+        "share": 5.7
+      },
+      {
+        "key": "redo:staging-verify",
+        "hours": 23.3,
+        "share": 2.1
+      },
+      {
+        "key": "redo:drive-green",
+        "hours": 15.4,
+        "share": 1.4
+      },
+      {
+        "key": "redo:record-demo",
+        "hours": 15.3,
+        "share": 1.4
+      },
+      {
+        "key": "cut:implement",
+        "hours": 12.7,
+        "share": 1.1
+      },
+      {
+        "key": "after-handoff:staging-verify",
+        "hours": 8.3,
+        "share": 0.7
+      }
+    ],
+    "trips": {
+      "checks failed": 411,
+      "review blocking \u2192 same session": 107,
+      "blocker": 79,
+      "checks red \u2192 same session": 85,
+      "red, not the change": 2,
+      "red, not the change \u2192 ruling": 6,
+      "sent to harness doctor": 27,
+      "review blocking": 193,
+      "turn budget exceeded \u2192 wrap-up": 41,
+      "extra round": 23,
+      "infra failure": 94,
+      "time budget exceeded \u2192 wrap-up": 25,
+      "needs Gleb": 6,
+      "repair session died": 4
+    }
+  },
+  "interventions": {
+    "total": 117,
+    "by_kind": {
+      "gate-changes": 7,
+      "fix": 39,
+      "repair": 71
+    },
+    "answers_to_mentor": 8,
+    "issue_tied": 46,
+    "distinct_issues": 19,
+    "by_size": {
+      "Extra large": 30,
+      "Large": 9,
+      "Small": 2,
+      "(harness repair, no issue)": 71,
+      "Medium": 5
+    }
+  },
+  "decisions": {
+    "total": 551,
+    "before_t2_fix": {
+      "n": 268,
+      "tier": {
+        "T0": 135,
+        "T3": 80,
+        "T1": 53
+      },
+      "decided_by": {
+        "decider": 104,
+        "skill": 29,
+        "gleb": 66,
+        "runbook": 55,
+        "standing": 14
+      }
+    },
+    "after_t2_fix": {
+      "n": 283,
+      "tier": {
+        "T3": 53,
+        "T0": 106,
+        "T2": 63,
+        "T1": 61
+      },
+      "decided_by": {
+        "gleb": 45,
+        "runbook": 16,
+        "decider": 206,
+        "skill": 2,
+        "standing": 14
+      }
+    }
+  },
+  "bets": {
+    "total": 198,
+    "by_kind_status": {
+      "review/missed": 20,
+      "review/held": 35,
+      "review/declined": 2,
+      "step/open": 131,
+      "step/declined": 6,
+      "review/open": 4
+    }
+  },
+  "sessions": {
+    "sessions": 5275,
+    "failed": 463,
+    "issue_records": 94,
+    "issue_sizes": {
+      "Extra large": 16,
+      "Large": 13,
+      "Small": 31,
+      "Medium": 34
+    }
+  }
+}

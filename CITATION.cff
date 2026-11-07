@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these scripts or data, please cite the paper (or this repository until the paper has an arXiv ID)."
+title: "Mentor field report: scripts and data"
+authors:
+  - family-names: Sologub
+    given-names: Gleb
+    affiliation: "Mentee Group Ltd"
+date-released: 2026-11-07
+license: MIT
+repository-code: "https://github.com/mngr/mentor-field-report"
+preferred-citation:
+  type: article
+  title: "Upstream-First Self-Improvement: A Field Report on a Self-Modifying Engineering Harness, and How to Keep Many Instances One Product"
+  authors:
+    - family-names: Sologub
+      given-names: Gleb
+      affiliation: "Mentee Group Ltd"
+  year: 2026
+  notes: "Preprint; arXiv identifier to be added."

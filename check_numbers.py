@@ -56,3 +56,9 @@ for k in ('before_t2_fix', 'after_t2_fix'):
     x = r['decisions'][k]; g = x['decided_by'].get('gleb', 0)
     print(f"  {k}: n={x['n']}, tiers {x['tier']}, T2 share {100*x['tier'].get('T2', 0)/x['n']:.0f}%, decided by the owner {100*g/x['n']:.0f}%")
 print('== Bets:', r['bets']['by_kind_status'])
+if 'usdPerDelivered' in ww:
+    print('== Model cost: REFERENCE values (SDK estimate at pay-as-you-go API prices; subscription, nothing billed)')
+    def ref(ws): return sum(fl(x['usd']) for x in ws) / sum(int(x['delivered']) for x in ws)
+    print(f"  per delivered issue: weeks 1-4 {ref(w[:4]):.0f}, weeks 5-8 {ref(w[4:]):.0f}, whole window {ww['usdPerDelivered']}")
+    print('  by size:', {b['size']: b.get('usdPerDelivered') for b in ww['bySize']})
+    print(f"  harness loops' share of all model use: {ww['harness_agents']['harnessShare']}%")

@@ -69,7 +69,7 @@ summary = {'source': 'daemon export of 2026-11-07 (scripts/export-for-paper.ts);
            'interventions': interv, 'decisions': dec, 'bets': bets, 'sessions': sess}
 (DATA / 'runtime_summary.json').write_text(json.dumps(summary, indent=2, default=dict))
 
-cols = ['week_end', 'delivered', 'interventions', 'per_delivered', 'per_point', 'lead_h_median', 'lost_share', 'usd_per_delivered', 'agent_hours', 'delivered_points', 'restarts']
+cols = ['week_end', 'delivered', 'interventions', 'per_delivered', 'per_point', 'lead_h_median', 'lost_share', 'usd', 'usd_per_delivered', 'agent_hours', 'delivered_points', 'restarts']
 with open(DATA / 'weekly_all.csv', 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=cols, extrasaction='ignore'); w.writeheader(); [w.writerow(r) for r in ALL]
 with open(DATA / 'weekly_by_size.csv', 'w', newline='') as f:
@@ -88,7 +88,7 @@ plt.rcParams.update({'font.family': 'serif', 'font.size': 7.5, 'axes.spines.top'
                      'xtick.color': INK2, 'ytick.color': INK2, 'pdf.fonttype': 42})
 x = range(8); lab = [(dt.date.fromisoformat(r['week_end']) - dt.timedelta(days=7)).strftime('%d %b') for r in ALL]
 fig, ax = plt.subplots(3, 1, figsize=(3.4, 3.7), sharex=True, gridspec_kw={'hspace': 0.28})
-series = [('per_delivered', 'interventions\nper delivered', '#2a78d6'), ('lost_share', 'agent time\nlost, %', '#eb6834'), ('usd_per_delivered', 'model cost per\ndelivered, $', '#1baf7a')]
+series = [('per_delivered', 'interventions\nper delivered', '#2a78d6'), ('lost_share', 'agent time\nlost, %', '#eb6834'), ('usd_per_delivered', 'reference cost per\ndelivered, $', '#1baf7a')]
 for a, (k, t, c) in zip(ax, series):
     v = [num(r[k]) for r in ALL]
     a.plot(x, v, color=c, linewidth=1.6, marker='o', markersize=3); a.set_ylabel(t, fontsize=7); a.set_ylim(0, max(v) * 1.18)

@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 HERE = Path(__file__).parent; W = list(csv.DictReader(open(HERE / 'data' / 'weekly_all.csv')))
 series = [('per_delivered', 'interventions\nper delivered', '#2a78d6'), ('lost_share', 'agent time\nlost, %', '#eb6834'),
-          ('usd_per_delivered', 'model cost per\ndelivered, $', '#1baf7a')]
+          ('usd_per_delivered', 'reference cost per\ndelivered, $', '#1baf7a')]
 series = [s for s in series if s[0] in W[0]]          # cost is present only when its release is cleared
 plt.rcParams.update({'font.family': 'serif', 'font.size': 7.5, 'axes.spines.top': False, 'axes.spines.right': False})
 fig, ax = plt.subplots(len(series), 1, figsize=(3.4, 1.25 * len(series) + 0.6), sharex=True)

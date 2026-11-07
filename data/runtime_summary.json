@@ -7,7 +7,8 @@
     "per_point": 0.63,
     "points": 95.0,
     "agent_hours": 542.9,
-    "lost_share": 22.2
+    "lost_share": 22.2,
+    "usd_per_delivered": 205
   },
   "last4_weeks": {
     "delivered": 39,
@@ -16,7 +17,8 @@
     "per_point": 0.57,
     "points": 99.0,
     "agent_hours": 562.2,
-    "lost_share": 10.9
+    "lost_share": 10.9,
+    "usd_per_delivered": 138
   },
   "by_size_periods": {
     "Small": {
@@ -65,6 +67,8 @@
     "delivered": 85,
     "interventionsPerDelivered": 1.38,
     "hours": 1111,
+    "usd": 14913,
+    "usdPerDelivered": 175,
     "leadHoursMedian": 5.9,
     "lostShare": 16.4,
     "deliveredPoints": 194,
@@ -78,7 +82,8 @@
         "perDelivered": 0.07,
         "leadHoursMedian": 4.3,
         "hoursPerDelivered": 2.7,
-        "lostShare": 26.6
+        "lostShare": 26.6,
+        "usdPerDelivered": 38
       },
       {
         "size": "Medium",
@@ -87,7 +92,8 @@
         "perDelivered": 0.16,
         "leadHoursMedian": 11.2,
         "hoursPerDelivered": 6,
-        "lostShare": 19.3
+        "lostShare": 19.3,
+        "usdPerDelivered": 96
       },
       {
         "size": "Large",
@@ -96,7 +102,8 @@
         "perDelivered": 0.82,
         "leadHoursMedian": 8.8,
         "hoursPerDelivered": 21.4,
-        "lostShare": 20.8
+        "lostShare": 20.8,
+        "usdPerDelivered": 281
       },
       {
         "size": "Extra large",
@@ -105,7 +112,8 @@
         "perDelivered": 2.14,
         "leadHoursMedian": null,
         "hoursPerDelivered": 43.8,
-        "lostShare": 12.5
+        "lostShare": 12.5,
+        "usdPerDelivered": 552
       }
     ],
     "restarts": {
@@ -184,6 +192,54 @@
       "time budget exceeded \u2192 wrap-up": 25,
       "needs Gleb": 6,
       "repair session died": 4
+    },
+    "harness_agents": {
+      "issueUsd": 14913,
+      "harnessUsd": 5263,
+      "harnessShare": 26.1,
+      "quotaStopHours": 62.7,
+      "byAgent": [
+        {
+          "agent": "curator",
+          "runs": 735,
+          "usd": 1758
+        },
+        {
+          "agent": "decider",
+          "runs": 409,
+          "usd": 1190
+        },
+        {
+          "agent": "replay",
+          "runs": 480,
+          "usd": 868
+        },
+        {
+          "agent": "strategist",
+          "runs": 262,
+          "usd": 798
+        },
+        {
+          "agent": "doctor",
+          "runs": 246,
+          "usd": 502
+        },
+        {
+          "agent": "sentinel",
+          "runs": 435,
+          "usd": 83
+        },
+        {
+          "agent": "brain",
+          "runs": 140,
+          "usd": 60
+        },
+        {
+          "agent": "rollout",
+          "runs": 6,
+          "usd": 4
+        }
+      ]
     }
   },
   "interventions": {

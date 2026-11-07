@@ -41,7 +41,7 @@ python3 check_numbers.py
   - `git_commits.py`, `handoffs.py`, `make_figures.py`: from git history and the hand-off notes;
   - `export-for-paper.ts`: a read-only export run inside the harness, using its own scorecard code;
   - `export_metrics.py`: turns that export into the aggregates here.
-- **Model cost figures** are withheld from this release until the client has agreed to their publication.
+- **The client is anonymous** at its request. It is described only as a commercial software company.
 - **No client code, ticket identifiers, names or internal URLs** appear in this repository. Issue keys were
   replaced by salted hashes during export and are dropped from the aggregates.
 
@@ -51,6 +51,10 @@ python3 check_numbers.py
   harness. It is counted from his commands, not from the harness's reports.
 - **Delivered:** handed off or merged within the window.
 - **Lost share:** agent hours that were redone, cut off, or spent after a hand-off, as a share of all agent hours.
+- **Cost (`usd`, `usd_per_delivered`, `usdPerDelivered`, …):** a *reference value, not money spent*. It is the
+  estimate the Claude Agent SDK reports for each session (`total_cost_usd`), priced at the provider's
+  pay-as-you-go API rates. The harness ran on flat-rate subscription accounts, so nothing was billed at these
+  prices. Use the figures to compare steps, sizes and weeks, not as a bill.
 - **Loop commit:** a commit whose subject starts with `curator:`, `strategist:`, `doctor:`, `sdk:` or `records:`.
   Nearly all commits are typed by an agent; this split is about who *started* the change.
 
